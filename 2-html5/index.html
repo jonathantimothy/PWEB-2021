@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Tegal</title>
+    <style>
+        body{
+            color: #000000;
+            background-color: #F7F6F2;
+            background-image: url(img/warteg.jpg);
+            background-position: center;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4em;
+            margin: 0px;
+        }
+        .wrapper {
+            width: 960px;
+            margin: 20px auto 20px auto;
+            /* border: 2px solid #000000; */
+            background-color:  #C8C6C6 ;
+        }
+
+        nav, footer{ 
+            /* position: -webkit-stictoky; */
+            /* position: sticky; */
+            clear: both;
+            background-color: #4B6587;
+            height: 61px;
+        }
+        nav ul {
+            margin: 0px 0px;
+            padding-left: 5px;
+        }
+        nav ul li {
+            display: inline-block;
+            padding: 20px 15px 20px 15px;
+            font-size: 14pt;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #C8C6C6;
+        }
+        nav ul li:hover {
+            background-color: #F0E5CF;
+        }
+        section.courses{
+            float: left;
+            width: 659px;
+            border-right: 1px solid #eeeeee;
+            padding-right: 10px;
+        }
+        article{
+            clear: both;
+            overflow: auto;
+            width: 100%;
+        }
+        hgroup{
+            margin-top: 20px;
+        }
+        figure{
+            float: left;
+            width: 290px;
+            height: 200px;
+            padding: 5px;
+            margin: 20px;
+            border: 1px solid #eeeeee;
+        }
+        figcaption{
+            font-size: 90%;
+            text-align: left;
+        }
+        aside{
+            width: 230px;
+            float: left;
+            padding: 0px 0px 0px 20px;
+        }
+        aside section a{
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #eeeeee;
+        }
+        aside section a:hover{
+            color: #eeeeee;
+            background-color: #4B6587;
+        }
+        a{
+            color: #4B6587;
+            text-decoration: none;
+        }
+        h1, h2, h3{
+            font-weight: normal;
+        }
+        h2{
+            font-weight: bold;
+            margin: 10px 0px 5px 0px;
+            padding: 0px;
+        }
+        h3{
+            margin: 0px 0px 10px 0px;
+        }
+        aside section h3 {
+            margin: 20px 0px 5px 0px;
+            font-weight: bold;
+        }
+        aside h2{
+            padding: 30px 0px 10px 0px;
+        }
+        footer p{
+            color: #eeeeee;            
+            font-size: 80%;
+            text-align: center;
+            padding: 20px 0px 20px 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <!-- <h1 class="header-logo">Warung Tegal</h1> -->
+            <img src="img/banner.jpg" width="960px" alt="banner">
+            <nav>
+                <ul>
+                    <li><a class="navbar" href="">Beranda</a></li>
+                    <li><a class="navbar" href="">Tentang</a></li>
+                    <li><a class="navbar" href="#daftar-masakan">Daftar Menu</a></li>
+                    <li><a class="navbar" href="">Katering</a></li>
+                    <li><a class="navbar" href="">Kontak</a></li>
+                </ul>
+            </nav>
+        </header>
+            <section id="daftar-masakan" class="courses">
+                <article>
+                    <figure>
+                        <img src="img/soto1.jpg" width="290px" height="200px" alt="soto indonesia">
+                        <figcaption>Soto Ayam</figcaption>
+                    </figure>
+                    <hgroup>
+                        <h2>Nasi Soto Ayam</h2>
+                        <h3>Makanan Berat Berkuah Hijau</h3>
+                        <p>Perpaduan suiran ayam khas Indonesia, diselimuti kuah hijau merekah, ditambah nasi putih Bojonegoro. 
+                            <br><br><br><br><br>
+                        </p>
+                    </hgroup>
+                </article>
+                <article>
+                    <figure>
+                        <img src="img/asem.jpg" width="290px" alt="Sayur Asem">
+                        <figcaption>Sayur Asem</figcaption>
+                    </figure>
+                    <hgroup></hgroup>
+                        <h2>Sayur Asem</h2>
+                        <h3>Sayur Asem dan Kawan-kawan</h3>
+                        <p>Sensasi potongan jagung rebus, ditemani jipang dan kacang panjang yang dikemas dengan kuah hangat berempah
+                            <br><br><br><br><br><br><br>
+                        </p>
+                    </hgroup>
+                </article>
+                <article>
+                    <figure>
+                        <img src="img/esteh.jpg" width="290px" alt="es teh">
+                        <figcaption>Es Teh</figcaption>
+                    </figure>
+                    <hgroup></hgroup>
+                        <h2>Es Teh</h2>
+                        <h3>Minuman Wajib Wartegmania</h3>
+                        <p>Kesegaran air es yang ditaburi bubuk teh Bogor disertai racikan gula pasir Majalengka akan melepas dahaga wartegmania.
+                            <br><br><br><br> <br> <br>
+                         </p>
+                        
+                    </hgroup>
+                </article>                
+            </section>
+         <aside>
+            <section class="populer-artikel">
+                <h3>Menu populer</h3>
+                <a href="">Nasi Rames</a>
+                <a href="">Ikan Pepes</a>
+                <a href="">Ikan Goreng</a>
+                <a href="">Ayam Goreng</a>
+            </section>
+            <section class="kontak-detail">
+                <h3>Temukan kami</h3>
+                <p>Warteg EMBER<br>di kota-kota di Indonesia</p>
+            </section>
+            <section>
+                <h3>Channel Youtube</h3>
+                <iframe width="250" height="154" 
+                src="https://www.youtube.com/embed/r2V8OVBpoeQ?start=1" 
+                title="Alasan Warteg EMBER  Enak" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            </section>
+        </aside>
+    
+        <footer>
+
+            <p>&copy;2021 WarTeg EMBER</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
